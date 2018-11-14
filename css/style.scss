@@ -1,0 +1,58 @@
+// Variables
+$generalBackgroundcolor : #F4F4F4;
+$itemWidth : 220px;
+$itemHeight : auto;
+$iconColor : #AAA;
+$iconSize : 13px;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 40px;
+}
+
+.dribbble {
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 730px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $generalBackgroundcolor;
+    align-content: space-around;
+    height: 450px;
+  }
+
+  &__item {
+    width: $itemWidth;
+    height: $itemHeight;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07);
+    background-color: white;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__caption {
+    text-align: right;
+    font-weight: 100;
+  }
+
+  &__icon {
+    color: $iconColor;
+    font-size: $iconSize;
+  }
+
+  &__caption--text {
+    color: $iconColor;
+    font-size: $iconSize;
+  }
+}
